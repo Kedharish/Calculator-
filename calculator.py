@@ -41,14 +41,14 @@ aggregate = {
   "/": divide,
 }
 
-number_1 = int(input("Enter the first number: "))
+number_1 = float(input("Enter the first number: "))
 for symbol in aggregate:
   print(symbol)
 
 continue_calc = True
 while continue_calc:
   User_aggregate = input("Enter the operation you want to perform: ")
-  Number_2 = int(input("Enter the second number: "))
+  Number_2 = (float(input("Enter the second number: ")))
   calc = aggregate[User_aggregate]
   answer_1 = calc(number_1, Number_2)
 
